@@ -1,0 +1,25 @@
+.header {
+	&__top {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+.logo {
+	&__img {
+	}
+}
+
+.menu {
+	&__list {
+		display: flex;
+		> :not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+	&__item {
+	}
+	&__link {
+	}
+}

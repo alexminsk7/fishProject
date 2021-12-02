@@ -1,0 +1,136 @@
+/* SET CORE ROOT DEFAULTS */
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-size: $rootSize;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	line-height: 1;
+}
+
+body {
+	font-family: $rootFont;
+	font-weight: 400;
+	font-size: 1.4rem;
+	overflow-x: hidden;
+	// background-color: $alabaster;
+	color: $mainColor;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: inherit;
+}
+
+ul,
+ol,
+li {
+	list-style-type: none;
+}
+
+a,
+button {
+	color: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	outline: none;
+	border: none;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+img,
+picture {
+	// ? removes bottom indent
+	vertical-align: top;
+	height: auto;
+	object-fit: cover;
+}
+
+img:not([alt]) {
+	filter: blur(5px);
+}
+
+/* REUSABLE COMMON CLASSES */
+.container {
+	max-width: 117rem;
+	min-height: 100%;
+	padding: 0 1.5rem;
+	margin: 0 auto;
+	outline: 1px solid red;
+}
+
+.stage {
+	padding: 8rem 0;
+}
+
+.header-block {
+	> *:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+.aligner {
+	text-align: center;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 4rem;
+	line-height: 5.7rem;
+	color: $accentColor;
+}
+
+.subtitle {
+	font-weight: 500;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	color: $gray;
+}
+
+.image-aligner {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.image-bg {
+	position: relative;
+
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}

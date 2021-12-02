@@ -1,0 +1,379 @@
+@media screen and (max-width: 1700px) {
+	.main__bg {
+		right: 9%;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.main__bg {
+		right: 3%;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.separator {
+		&::before {
+			right: 60%;
+		}
+		&::after {
+			left: 60%;
+		}
+	}
+
+	.main__bg {
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 1270px) {
+	.wrapper {
+		max-width: 80.4rem;
+	}
+
+	.separator {
+		svg {
+			transform: scale(0.8);
+		}
+	}
+
+	.main__img {
+		width: 66rem;
+	}
+	.main__cat {
+		top: -21rem;
+		left: 3rem;
+	}
+
+	.main {
+		padding-bottom: 12rem;
+
+		.promise__img {
+			max-width: 85%;
+		}
+
+		.main__title {
+			font-size: 64px;
+			line-height: 77px;
+		}
+		.main__about {
+			font-size: 14px;
+			line-height: 16px;
+		}
+		.main__goal {
+			font-size: 14px;
+			line-height: 140%;
+		}
+		.main__text {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+
+	.help__article {
+		width: 15rem;
+	}
+
+	.help__link {
+		width: 11rem;
+		height: 11rem;
+		margin: 0 auto;
+
+		img {
+			transform: scale(0.7);
+		}
+
+		.help__fix {
+			transform: scale(0.6);
+		}
+	}
+
+	.ward__options {
+		max-width: 61.8rem;
+	}
+
+	.ward__option {
+		width: 46%;
+	}
+
+	.ward-option__title {
+		font-size: 2.4rem;
+	}
+
+	.ward-option__title--margin {
+		margin-bottom: 4.4rem;
+	}
+
+	.registry-contact__text {
+		font-size: 1.6rem;
+		line-height: 2.2rem;
+	}
+
+	.need__title {
+		font-size: 2.4rem;
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	.separator {
+		&::before {
+			right: 62%;
+		}
+		&::after {
+			left: 62%;
+		}
+	}
+
+	.main__img {
+		width: 58rem;
+	}
+	.main__cat {
+		top: -20rem;
+		left: 0;
+	}
+
+	.main {
+		padding-bottom: 5rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.separator {
+		svg {
+			transform: scale(0.6);
+		}
+	}
+
+	.cards .card {
+		margin: 0 auto;
+	}
+
+	.main__img {
+		max-width: 50.4rem;
+		height: 56.4rem;
+	}
+	.main__cat {
+		width: 80%;
+		top: -19rem;
+		left: 1rem;
+	}
+
+	.wrapper {
+		max-width: 83.4rem;
+
+		.promise__img {
+			max-width: 70%;
+		}
+	}
+
+	.summary__img {
+		max-width: 32.2rem;
+		&::before {
+			min-height: 322px;
+		}
+
+		img {
+			border-width: 1.8rem;
+		}
+
+		.summary__dog {
+			max-width: 32.2rem;
+		}
+
+		.summary__cat {
+			max-width: 15.8rem;
+			top: 18rem;
+			border-width: 0.6rem;
+		}
+	}
+
+	.summary__title {
+		font-size: 24px;
+		line-height: 120%;
+	}
+
+	.wrapper {
+		width: 47.2rem;
+	}
+
+	.help__images {
+		justify-content: space-around;
+	}
+
+	.help__article {
+		width: 14rem;
+		padding: 0;
+		margin-bottom: 3.2rem;
+	}
+
+	.help__text {
+		font-size: 1.4rem;
+		line-height: 2rem;
+	}
+
+	.ward-option__title {
+		font-size: 2rem;
+	}
+
+	.ward-option__text {
+		font-size: 1.4rem;
+	}
+
+	.registry__contact .stage {
+		max-width: 50rem;
+	}
+
+	.registry-contact__text {
+		font-size: 1.4rem;
+	}
+
+	.finance__title,
+	.finance__subtitle {
+		font-size: 2rem;
+	}
+
+	.finance__text {
+		max-width: 38.5rem;
+	}
+
+	.need__title,
+	.autohelp__title {
+		font-size: 2rem;
+	}
+
+	.autohelp__text {
+		font-size: 1.4rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.separator {
+		&::before {
+			right: 66%;
+		}
+		&::after {
+			left: 66%;
+		}
+	}
+
+	.cards .card {
+		max-width: 30rem;
+	}
+
+	.action,
+	.action--gold {
+		font-size: 1.8rem;
+	}
+
+	.nav__link {
+		display: none;
+	}
+
+	.help__link {
+		width: 8rem;
+		height: 8rem;
+
+		img {
+			transform: scale(0.5);
+		}
+
+		.help__fix {
+			transform: scale(0.4);
+		}
+	}
+
+	.ward__options {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.ward-option + .ward-option {
+		margin-top: 3.2rem;
+	}
+
+	.ward-option {
+		width: 100%;
+	}
+
+	.ward-option__title {
+		font-size: 1.6rem;
+		margin-bottom: 1.6rem;
+	}
+
+	.registry__contact {
+		flex-direction: column;
+	}
+
+	.registry-contact__text {
+		margin-right: 0;
+		margin-bottom: 0.6rem;
+	}
+
+	.finance__inner {
+		max-width: 38.2rem;
+	}
+
+	.finance__block {
+		flex-grow: 1;
+	}
+
+	.finance__account {
+		margin-bottom: 3.2rem;
+	}
+
+	.finance__title,
+	.finance__subtitle,
+	.finance__address {
+		margin-bottom: 1.6rem;
+	}
+
+	.finance__boxes,
+	.finance__address {
+		font-size: 1.4rem;
+	}
+
+	.finance-btn__inner,
+	.autohelp-btn__inner,
+	.need-btn__inner {
+		display: flex;
+		justify-content: center;
+	}
+
+	.need__title,
+	.autohelp__title {
+		font-size: 1.6rem;
+		margin-bottom: 1.6rem;
+	}
+
+	.autohelp__title {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.wrapper {
+		width: 95%;
+	}
+
+	.separator {
+		&::before {
+			right: 69%;
+		}
+		&::after {
+			left: 69%;
+		}
+	}
+
+	.help__article {
+		width: 16rem;
+	}
+
+	.finance__text {
+		padding: 0 3rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.wrapper {
+		width: 90%;
+	}
+}
