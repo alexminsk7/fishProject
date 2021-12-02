@@ -20,9 +20,8 @@ body {
 body {
 	font-family: $rootFont;
 	font-weight: 400;
-	font-size: 1.4rem;
+	font-size: $fontSize16;
 	overflow-x: hidden;
-	// background-color: $alabaster;
 	color: $mainColor;
 }
 
@@ -65,7 +64,7 @@ select {
 
 img,
 picture {
-	// ? removes bottom indent
+	// ! removes bottom indent
 	vertical-align: top;
 	height: auto;
 	object-fit: cover;
@@ -77,21 +76,9 @@ img:not([alt]) {
 
 /* REUSABLE COMMON CLASSES */
 .container {
-	max-width: 117rem;
-	min-height: 100%;
+	max-width: 123rem;
 	padding: 0 1.5rem;
 	margin: 0 auto;
-	outline: 1px solid red;
-}
-
-.stage {
-	padding: 8rem 0;
-}
-
-.header-block {
-	> *:not(:last-child) {
-		margin-bottom: 1rem;
-	}
 }
 
 .aligner {
@@ -103,34 +90,25 @@ img:not([alt]) {
 }
 
 .title {
-	font-weight: bold;
-	font-size: 4rem;
-	line-height: 5.7rem;
+	font-size: $fontSize24;
+	line-height: 2.8rem;
 	color: $accentColor;
 }
 
-.subtitle {
-	font-weight: 500;
-	font-size: 1.4rem;
-	line-height: 2rem;
-	color: $gray;
+.text {
+	line-height: 1.9rem;
 }
 
-.image-aligner {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+.bold {
+	font-weight: bold;
 }
 
-.image-bg {
-	position: relative;
-
-	img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-	}
+.btn {
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 700;
+	font-size: $fontSize24;
+	line-height: 3.2rem;
+	padding: 1.4rem 8.8rem;
+	text-transform: uppercase;
+	border-radius: 2rem;
 }
