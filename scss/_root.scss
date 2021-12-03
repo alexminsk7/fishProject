@@ -56,7 +56,6 @@ button {
 }
 
 input,
-button,
 textarea,
 select {
 	font: inherit;
@@ -74,7 +73,7 @@ img:not([alt]) {
 	filter: blur(5px);
 }
 
-/* REUSABLE COMMON CLASSES */
+/* REUSABLE ROOT CLASSES */
 .container {
 	max-width: 123rem;
 	padding: 0 1.5rem;
@@ -93,10 +92,6 @@ img:not([alt]) {
 	font-size: $fontSize24;
 	line-height: 2.8rem;
 	color: $accentColor;
-}
-
-.text {
-	line-height: 1.9rem;
 }
 
 .bold {
