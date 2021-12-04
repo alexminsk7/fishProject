@@ -32,6 +32,10 @@
 		margin-left: 11.2rem;
 		color: $white;
 		background-color: rgba(255, 255, 255, 0.5);
+		&:hover {
+			background-color: rgba(255, 255, 255, 1);
+			color: $accentColor;
+		}
 	}
 	&__content-box {
 		display: flex;

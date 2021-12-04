@@ -111,6 +111,8 @@ img:not([alt]) {
   padding: 1.4rem 8.8rem;
   text-transform: uppercase;
   border-radius: 2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header__top {
@@ -155,6 +157,11 @@ img:not([alt]) {
   margin-left: 11.2rem;
   color: #fff;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header__content-btn:hover {
+  background-color: white;
+  color: #001e64;
 }
 
 .header__content-box {
@@ -271,7 +278,8 @@ img:not([alt]) {
   /* PRODUCT SECTON */
   /* SEAFOOD SECTION */
   /* SUMMARY SECTION */
-  /* COMMON COMMON */
+  /* CONTACTS SECTION */
+  /* COMMON CLASSES */
 }
 
 .main .product {
@@ -301,7 +309,6 @@ img:not([alt]) {
 }
 
 .main .product__name-item {
-  font-size: 2.4rem;
   line-height: 3.2rem;
   cursor: pointer;
 }
@@ -339,13 +346,11 @@ img:not([alt]) {
 
 .main .product__content-item span {
   display: block;
-  font-size: 1.8rem;
 }
 
 .main .product__content-title {
   padding-top: 1rem;
   margin-bottom: 2rem;
-  font-size: 2.4rem;
   line-height: 3.2rem;
 }
 
@@ -355,6 +360,11 @@ img:not([alt]) {
 
 .main .product__content-btn {
   border: 1px solid #001e64;
+}
+
+.main .product__content-btn:hover {
+  background-color: #001e64;
+  color: #fff;
 }
 
 .main .seafood {
@@ -371,7 +381,6 @@ img:not([alt]) {
       justify-content: space-around;
   color: #fff;
   font-weight: 700;
-  font-size: 1.8rem;
   line-height: 2.4rem;
 }
 
@@ -419,7 +428,6 @@ img:not([alt]) {
 .main .summary__item-title {
   max-width: 49rem;
   margin-bottom: 3rem;
-  font-size: 2.4rem;
   line-height: 2.9rem;
 }
 
@@ -439,15 +447,62 @@ img:not([alt]) {
 
 .main .summary__blockquote-text {
   max-width: 53rem;
-  font-size: 1.8rem;
   line-height: 2.4rem;
+}
+
+.main .contacts {
+  background-image: url(../images/norge.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.main .contacts__box {
+  max-width: 39rem;
+  margin-left: auto;
+  padding: 3rem 0 3rem 2rem;
+  background-color: #fff;
+}
+
+.main .contacts__box-title + .contacts__box-list {
+  margin-top: 3rem;
+}
+
+.main .contacts__box-title {
+  width: 19.5rem;
+  line-height: 2.4rem;
+}
+
+.main .contacts__box-list {
+  line-height: 2.1rem;
+}
+
+.main .contacts__box-item:not(:first-child) {
+  margin-top: 3rem;
+}
+
+.main .contacts__box-item span {
+  display: block;
+}
+
+.main .product__name-item,
+.main .product__content-title,
+.main .summary__item-title {
+  font-size: 2.4rem;
+}
+
+.main .product__content-item span,
+.main .seafood__items,
+.main .summary__blockquote-text,
+.main .contacts__box {
+  font-size: 1.8rem;
 }
 
 .main .product__name-item.slick-current,
 .main .product__content-title,
 .main .product__content-btn,
 .main .product__content-item span,
-.main .summary__item-title {
+.main .summary__item-title,
+.main .contacts__box-title {
   color: #001e64;
 }
 
@@ -466,6 +521,52 @@ img:not([alt]) {
 .main .summary__blockquote,
 .main .summary__blockquote-text {
   margin: 0 auto;
+}
+
+.footer {
+  padding: 3rem 0 10rem;
+  /* COMMON CLASSES */
+}
+
+.footer__inner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0 2.3rem;
+}
+
+.footer__inner .menu {
+  margin-top: 0;
+  padding-bottom: 3rem;
+}
+
+.footer-social__list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.footer-social__link path {
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+}
+
+.footer-social__link:hover path {
+  fill: #001e64;
+}
+
+.footer__inner, .footer-social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 1700px) {

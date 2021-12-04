@@ -17,7 +17,6 @@
 			transform: translateX(-50%);
 		}
 		&__name-item {
-			font-size: $fontSize24;
 			line-height: 3.2rem;
 			cursor: pointer;
 		}
@@ -43,13 +42,11 @@
 			margin-bottom: 3rem;
 			span {
 				display: block;
-				font-size: $fontSize18;
 			}
 		}
 		&__content-title {
 			padding-top: 1rem;
 			margin-bottom: 2rem;
-			font-size: $fontSize24;
 			line-height: 3.2rem;
 		}
 		&__content-text {
@@ -57,6 +54,10 @@
 		}
 		&__content-btn {
 			border: 1px solid $accentColor;
+			&:hover {
+				background-color: $accentColor;
+				color: $white;
+			}
 		}
 	}
 
@@ -70,7 +71,6 @@
 			justify-content: space-around;
 			color: $white;
 			font-weight: 700;
-			font-size: $fontSize18;
 			line-height: 2.4rem;
 		}
 		&__item {
@@ -105,7 +105,6 @@
 		&__item-title {
 			max-width: 49rem;
 			margin-bottom: 3rem;
-			font-size: $fontSize24;
 			line-height: 2.9rem;
 		}
 		&__item-text {
@@ -121,26 +120,66 @@
 		}
 		&__blockquote-text {
 			max-width: 53rem;
-			font-size: $fontSize18;
 			line-height: 2.4rem;
 		}
 	}
 
-	/* COMMON COMMON */
+	/* CONTACTS SECTION */
+	.contacts {
+		background-image: url(../images/norge.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		&__box {
+			max-width: 39rem;
+			margin-left: auto;
+			padding: 3rem 0 3rem 2rem;
+			background-color: $white;
+			&-title + .contacts__box-list {
+				margin-top: 3rem;
+			}
+		}
+		&__box-title {
+			width: 19.5rem;
+			line-height: 2.4rem;
+		}
+		&__box-list {
+			line-height: 2.1rem;
+		}
+		&__box-item {
+			&:not(:first-child) {
+				margin-top: 3rem;
+			}
+			span {
+				display: block;
+			}
+		}
+	}
+
+	/* COMMON CLASSES */
+	.product__name-item,
+	.product__content-title,
+	.summary__item-title {
+		font-size: $fontSize24;
+	}
+	.product__content-item span,
+	.seafood__items,
+	.summary__blockquote-text,
+	.contacts__box {
+		font-size: $fontSize18;
+	}
 	.product__name-item.slick-current,
 	.product__content-title,
 	.product__content-btn,
 	.product__content-item span,
-	.summary__item-title {
+	.summary__item-title,
+	.contacts__box-title {
 		color: $accentColor;
 	}
-
 	.product__name-item,
 	.seafood__items,
 	.summary__item-title {
 		font-family: 'Roboto Slab', sans-serif;
 	}
-
 	.seafood,
 	.seafood__item {
 		background-repeat: no-repeat;

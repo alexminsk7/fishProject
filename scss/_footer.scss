@@ -1,0 +1,35 @@
+.footer {
+	padding: 3rem 0 10rem;
+	&__inner {
+		justify-content: space-between;
+		align-items: flex-end;
+		padding: 0 2.3rem;
+		.menu {
+			margin-top: 0;
+			padding-bottom: 3rem;
+		}
+	}
+	&-social {
+		&__list {
+			align-items: center;
+			padding-bottom: 2rem;
+		}
+		&__item {
+			&:not(:last-child) {
+				margin-right: 3rem;
+			}
+		}
+		&__link path {
+			transition: fill 0.3s ease;
+		}
+		&__link:hover path {
+			fill: $accentColor;
+		}
+	}
+
+	/* COMMON CLASSES */
+	&__inner,
+	&-social__list {
+		display: flex;
+	}
+}
