@@ -1,192 +1,190 @@
-.main {
-	/* PRODUCT SECTON */
-	.product {
-		padding-top: 10rem;
-		&__inner {
-			display: flex;
-			justify-content: space-between;
+/* PRODUCT SECTON */
+.product {
+	padding-top: 10rem;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__name {
+		width: 51rem;
+		padding-top: 2rem;
+	}
+	&-prev {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&__name-item {
+		line-height: 3.2rem;
+		cursor: pointer;
+	}
+	&__name-item.slick-current {
+		font-size: 3.6rem;
+		font-weight: 700;
+	}
+	&__name-item + .product__name-item {
+		margin-top: 3rem;
+	}
+	&__content {
+		max-width: 60rem;
+	}
+	&__content-box {
+		display: flex;
+		justify-content: space-between;
+		margin: 1rem;
+	}
+	&__content-list {
+		max-width: 29rem;
+	}
+	&__content-item {
+		margin-bottom: 3rem;
+		span {
+			display: block;
 		}
-		&__name {
-			width: 51rem;
-			padding-top: 2rem;
+	}
+	&__content-title {
+		padding-top: 1rem;
+		margin-bottom: 2rem;
+		line-height: 3.2rem;
+	}
+	&__content-text {
+		margin-bottom: 2.6rem;
+	}
+	&__content-btn {
+		border: 1px solid $accentColor;
+		&:hover {
+			background-color: $accentColor;
+			color: $white;
 		}
-		&-prev {
-			position: absolute;
-			top: 0;
-			left: 50%;
-			transform: translateX(-50%);
-		}
-		&__name-item {
-			line-height: 3.2rem;
-			cursor: pointer;
-		}
-		&__name-item.slick-current {
-			font-size: 3.6rem;
-			font-weight: 700;
-		}
-		&__name-item + .product__name-item {
+	}
+}
+
+/* SEAFOOD SECTION */
+.seafood {
+	padding: 29rem 0 10rem;
+	background-image: url(../images/water.jpg);
+	background-position: top center;
+	&__items {
+		display: flex;
+		justify-content: space-around;
+		color: $white;
+		font-weight: 700;
+		line-height: 2.4rem;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		max-width: 18rem;
+		min-height: 16.5rem;
+		background-image: url(../images/svg/shell.svg);
+		background-position: center;
+		stroke: 0.15;
+	}
+}
+
+/* SUMMARY SECTION */
+.summary {
+	padding: 10rem 0;
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 5rem;
+	}
+	&__item:last-child {
+		margin-bottom: 10rem;
+	}
+	&__item--left .summary__item-content {
+		margin-right: 18rem;
+	}
+	&__item--left .summary__item-title {
+		max-width: 42rem;
+	}
+	&__item-title {
+		max-width: 49rem;
+		margin-bottom: 3rem;
+		line-height: 2.9rem;
+	}
+	&__item-text {
+		max-width: 42rem;
+		line-height: 1.9rem;
+	}
+	&__item-text + .summary__item-text,
+	&__item-text + .summary__item-title {
+		margin-top: 2.5rem;
+	}
+	&__blockquote {
+		max-width: 80rem;
+	}
+	&__blockquote-text {
+		max-width: 53rem;
+		line-height: 2.4rem;
+	}
+}
+
+/* CONTACTS SECTION */
+.contacts {
+	background-image: url(../images/norge.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	&__box {
+		max-width: 39rem;
+		margin-left: auto;
+		padding: 3rem 1.5rem 3rem 2rem;
+		background-color: $white;
+		&-title + .contacts__box-list {
 			margin-top: 3rem;
 		}
-		&__content {
-			max-width: 60rem;
+	}
+	&__box-title {
+		width: 19.5rem;
+		line-height: 2.4rem;
+	}
+	&__box-list {
+		line-height: 2.1rem;
+	}
+	&__box-item {
+		&:not(:first-child) {
+			margin-top: 3rem;
 		}
-		&__content-box {
-			display: flex;
-			justify-content: space-between;
-			margin: 1rem;
-		}
-		&__content-list {
-			max-width: 29rem;
-		}
-		&__content-item {
-			margin-bottom: 3rem;
-			span {
-				display: block;
-			}
-		}
-		&__content-title {
-			padding-top: 1rem;
-			margin-bottom: 2rem;
-			line-height: 3.2rem;
-		}
-		&__content-text {
-			margin-bottom: 2.6rem;
-		}
-		&__content-btn {
-			border: 1px solid $accentColor;
-			&:hover {
-				background-color: $accentColor;
-				color: $white;
-			}
+		span {
+			display: block;
 		}
 	}
+}
 
-	/* SEAFOOD SECTION */
-	.seafood {
-		padding: 29rem 0 10rem;
-		background-image: url(../images/water.jpg);
-		background-position: top center;
-		&__items {
-			display: flex;
-			justify-content: space-around;
-			color: $white;
-			font-weight: 700;
-			line-height: 2.4rem;
-		}
-		&__item {
-			display: flex;
-			align-items: center;
-			text-align: center;
-			max-width: 18rem;
-			min-height: 16.5rem;
-			background-image: url(../images/svg/shell.svg);
-			background-position: center;
-			stroke: 0.15;
-		}
-	}
-
-	/* SUMMARY SECTION */
-	.summary {
-		padding: 10rem 0;
-		&__item {
-			display: flex;
-			justify-content: space-between;
-			margin-bottom: 5rem;
-		}
-		&__item:last-child {
-			margin-bottom: 10rem;
-		}
-		&__item--left .summary__item-content {
-			margin-right: 18rem;
-		}
-		&__item--left .summary__item-title {
-			max-width: 42rem;
-		}
-		&__item-title {
-			max-width: 49rem;
-			margin-bottom: 3rem;
-			line-height: 2.9rem;
-		}
-		&__item-text {
-			max-width: 42rem;
-			line-height: 1.9rem;
-		}
-		&__item-text + .summary__item-text,
-		&__item-text + .summary__item-title {
-			margin-top: 2.5rem;
-		}
-		&__blockquote {
-			max-width: 80rem;
-		}
-		&__blockquote-text {
-			max-width: 53rem;
-			line-height: 2.4rem;
-		}
-	}
-
-	/* CONTACTS SECTION */
-	.contacts {
-		background-image: url(../images/norge.jpg);
-		background-repeat: no-repeat;
-		background-position: bottom left;
-		&__box {
-			max-width: 39rem;
-			margin-left: auto;
-			padding: 3rem 0 3rem 2rem;
-			background-color: $white;
-			&-title + .contacts__box-list {
-				margin-top: 3rem;
-			}
-		}
-		&__box-title {
-			width: 19.5rem;
-			line-height: 2.4rem;
-		}
-		&__box-list {
-			line-height: 2.1rem;
-		}
-		&__box-item {
-			&:not(:first-child) {
-				margin-top: 3rem;
-			}
-			span {
-				display: block;
-			}
-		}
-	}
-
-	/* COMMON CLASSES */
-	.product__name-item,
-	.product__content-title,
-	.summary__item-title {
-		font-size: $fontSize24;
-	}
-	.product__content-item span,
-	.seafood__items,
-	.summary__blockquote-text,
-	.contacts__box {
-		font-size: $fontSize18;
-	}
-	.product__name-item.slick-current,
-	.product__content-title,
-	.product__content-btn,
-	.product__content-item span,
-	.summary__item-title,
-	.contacts__box-title {
-		color: $accentColor;
-	}
-	.product__name-item,
-	.seafood__items,
-	.summary__item-title {
-		font-family: 'Roboto Slab', sans-serif;
-	}
-	.seafood,
-	.seafood__item {
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	.summary__blockquote,
-	.summary__blockquote-text {
-		margin: 0 auto;
-	}
+/* COMMON CLASSES */
+.product__name-item,
+.product__content-title,
+.summary__item-title {
+	font-size: $fontSize24;
+}
+.product__content-item span,
+.seafood__items,
+.summary__blockquote-text,
+.contacts__box {
+	font-size: $fontSize18;
+}
+.product__name-item.slick-current,
+.product__content-title,
+.product__content-btn,
+.product__content-item span,
+.summary__item-title,
+.contacts__box-title {
+	color: $accentColor;
+}
+.product__name-item,
+.seafood__items,
+.summary__item-title {
+	font-family: 'Roboto Slab', sans-serif;
+}
+.seafood,
+.seafood__item {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.summary__blockquote,
+.summary__blockquote-text {
+	margin: 0 auto;
 }
